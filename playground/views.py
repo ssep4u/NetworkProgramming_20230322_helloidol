@@ -7,8 +7,12 @@ def say_hello(request):
 
 
 def say_hello_html(request):
-    return render(request, "playground/hello.html")
+    return render(request, "playground/hello.html", {'name': '3반', 'greeting': '반갑다'})
 
 
 def say_bye(request):
-    return render(request, "playground/bye.html")
+    context = {
+        'name': '김지훈 선생님',
+        'bye': '안녕히'
+    }
+    return render(request, "playground/bye.html", context=context)
