@@ -37,3 +37,7 @@
       1. '_아이브_', in INSTALLED_APPS
 6. helloidol/urls
    1. 아이브/ -> 아이브.urls
+7. _아이브_/
+   1. views
+      1. show_원영()
+      2. show_유진()
